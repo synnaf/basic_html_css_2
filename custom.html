@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="main.css" /> 
+    <!-- FONT STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600|Karma:300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700&display=swap" rel="stylesheet" />
+    <!-- JAVASCRIPT FOR VALIDATING FORM -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+                }, false);
+            });
+            }, false);
+        })();
+    </script>
+    <title>Silver by Heléne</title>
+</head>
+<body>
+    <header class="row bg-dark width-100 justify-content-center">
+        <section class="header-image col-12 text-center">
+            <h1 class="p-4 ml-6 mt-4">SILVER BY HELÉNE</h1>
+        </section>
+        <nav class="navbar navbar-light col-12 navbar-expand justify-content-center">
+            <ul class="navbar-nav p-2"> 
+                <li class="nav-item mr-4 ml-4">
+                    <a class="nav-link" href="webshop.html">WEBSHOP</a>
+                </li>    
+                <li class="nav-item mr-4 ml-4">
+                    <a class="nav-link" href="index.html">ABOUT</a>
+                </li>
+                <li class="nav-item mr-4 ml-4">
+                    <a class="nav-link active" href="custom.html">CONTACT</a>
+                </li>
+            </ul>     
+        </nav>
+    </header>
+    <article class="container p-4">            
+        <div class="row mt-4"> 
+            <h2 class="col-12 text-center m-4">CONTACT</h2>
+        </div>
+        <!-- BOOKING FORM-->
+        <div class="row justify-content-center"> 
+            <form class="needs-validation" novalidate>
+                <div class="form-row justify-content-center"> 
+                    <div class="form-group col-8 mt-4">
+                        <label for="name">Your name and email:</label>
+                        <input type="email" class="form-control mb-2" id="email" placeholder="Your email adress" required />
+                        <input type="text" class="form-control" id="name" placeholder="Your name" />
+                        <div class="invalid-feedback">Please write your email!</div>
+                    </div>
+                    <div class="form-group col-8">
+                        <label for="select-question">Choose a relevant topic:</label>
+                        <select class="form-control" id="select-question">
+                            <option>Order custom design</option>
+                            <option>Payment</option>
+                            <option>Current or previous collections</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-8"> 
+                        <label for="question">Describe your question:</label>
+                        <textarea class="form-control" id="question" required></textarea>
+                        <div class="invalid-feedback">Please describe your question</div>
+                    </div>
+                    <div class="form-group col-8">
+                        <button type="submit" class="btn btn-primary col-4">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>         
+    </article>
+    <footer class="container-fluid pt-4">
+        <section class="row text-center">  
+            <div class="col-12 col-lg-6 p-2">
+                <h6 class="mb-2">Find us on social media</h6>
+                <a aria-label="Go to twitter" href="https://www.twitter.com">
+                    <i class="fa fa-twitter fa-2x pr-2 " aria-hidden="true" title="Twitter icon"></i>
+                </a>
+                <a aria-label="Go to instagram" href="https://www.instagram.com">
+                    <i class="fa fa-instagram fa-2x pr-2" aria-hidden="true" title="Instagram icon"></i>
+                </a>
+                <a aria-label="Go to facebook" href="https://www.facebook.com">
+                    <i class="fa fa-facebook fa-2x pr-2" aria-hidden="true" title="Facebook icon"></i>
+                </a>
+            </div>
+            <div class="col-12 col-lg-6 p-2 mb-2">
+                <h6 class="mb-2">Contact us</h6>
+                <p class="font-weight-light p-0 m-0">+46768098850</p>
+                <p class="font-weight-light p-0 m-0">Timmermansgatan 15</p>
+                <p class="font-weight-light p-0 m-0">802 52 Gävle</p> 
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

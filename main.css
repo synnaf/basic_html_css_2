@@ -1,0 +1,63 @@
+/*HEADER*/
+h1 {
+    font-style:oblique;
+    font-size: 54pt;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+.header-image{
+    background-image: url(rings.jpg);
+    height:350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*NAVIGATION*/
+.navbar {
+    background-color:lightblue; 
+}
+a, a::after {
+    color: black;
+    font-family: font-family: 'Karma', serif;
+    font-size:0.9rem;
+}
+
+/*CONTENT*/
+p, li, h6{
+    font-family: font-family: 'Karma', serif;
+    font-size:12pt; 
+}
+.card-text {
+    font-size:10pt;
+}
+h2, h3  {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 24pt;
+}
+
+/* CARD DECK RESPONSIVE LAYOUT FOR IMAGES */
+.card-img-top {
+    height: 70vw;
+    object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+    {
+    height: 70vw;
+    object-fit: cover;
+    }
+}
+@media screen and (min-width: 992px) {
+    .card-img-top {
+        height: 15vw;
+        object-fit: cover;
+    }
+}
+
+/*FOOTER*/
+footer {
+    background-color:lightblue; 
+    font-family: font-family: 'Karma', serif;
+    font-size: 10pt; 
+}
+footer p, h6 {
+    font-size: 10pt; 
+}
